@@ -1,14 +1,20 @@
-# COEVOLUTIONARY-LEARNING-SPATIALLY-DISTRIBUTED-POPULATIONS-
-Evolving Cellular Automata
-*The program uses a coevolution "default" strategy, where the CAs are treated as the host population ,and the ICs are treated as a parasite population that competes with CAs to give them challenging problems. 
+# Evolving Cellular Automata
 
-*The populations are represented as 20x20 grid of (CA, IC) pairs. The grid uses periodic boundary conditions, so the top row, is connected to the bottom row, and the left-most column is connected to the right-most column. 
+This project implements a coevolutionary approach where Cellular Automata (CAs) and Initial Conditions (ICs) compete to solve density classification tasks. The goal is to evolve a CA that can accurately classify ICs based on their density.
 
-*A genetic algorithm is used to coevolve a population of 1-dimensional Cellular Automata (CAs) to solve the density > 0.5 task and perform the “density classification” task. 
+## Coevolution Strategy
 
-*The goal was to find a CA that decides whether or not the IC contains a majority of 1s (has high density) or 0s.
- 
-*The CA correctly classifies an Initial Condition (IC) if it returns a state vector of all 1s ,if the IC had a majority 1s and a vector of all 0s if the IC had a majority 0s.
+The program follows a coevolution "default" strategy, treating CAs as the host population and ICs as the parasite population. Both populations are represented as a 20x20 grid of (CA, IC) pairs, utilizing periodic boundary conditions.
 
-the link for the project presentation
-https://www.canva.com/design/DAFTtKLfBmQ/AJS9xRT-HTYpvcJaZ3hmhA/edit?utm_content=DAFTtKLfBmQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+## Genetic Algorithm
+
+A genetic algorithm is employed to coevolve a population of 1-dimensional CAs. The algorithm aims to find a CA capable of solving the density classification task where the IC contains a majority of 1s or 0s.
+
+## Density Classification Task
+
+The CA correctly classifies an Initial Condition (IC) by returning a state vector of all 1s if the IC has a majority of 1s (high density) or a vector of all 0s if the IC has a majority of 0s.
+
+## Project Presentation
+
+You can find the project presentation [here](https://www.canva.com/design/DAFTtKLfBmQ/AJS9xRT-HTYpvcJaZ3hmhA/edit?utm_content=DAFTtKLfBmQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton). It provides detailed information, visualizations, and additional insights about the project.
+
